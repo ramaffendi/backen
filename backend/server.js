@@ -17,7 +17,7 @@ const PORT = process.env.PORT || 5000;
 // Middleware
 app.use(
   cors({
-    origin: "https://ramaffendi.github.io", // Sesuaikan dengan frontend
+    origin: "*", // Sesuaikan dengan frontend
     methods: "GET,PUT,POST,DELETE",
     credentials: true, // Izinkan pengiriman cookie atau header authorization
   })
